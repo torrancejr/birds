@@ -11,26 +11,38 @@
     <div data-key="69" class="key">
       <kbd>E</kbd>
       <span class="sound">NFC</span>
+      <audio id="tough" src="./sounds/tough.mp3"></audio>
+      <button onclick="document.getElementById('tough').play()"></button>
     </div>
     <div data-key="65" class="key">
       <kbd>A</kbd>
       <span class="sound">EAST</span>
+      <audio id="heart" src="./sounds/heart.mp3"></audio>
+      <button onclick="document.getElementById('heart').play()"></button>
     </div>
     <div data-key="71" class="key">
       <kbd>G</kbd>
       <span class="sound">2018</span>
+      <audio id="announcers" src="./sounds/.announcersmp3"></audio>
+      <button onclick="document.getElementById('announcers').play()"></button>
     </div>
     <div data-key="76" class="key">
       <kbd>L</kbd>
       <span class="sound">CHAMPS</span>
+      <audio id="sixtyone" src="./sounds/sixtyone.mp3"></audio>
+      <button onclick="document.getElementById('sixtyone').play()"></button>
     </div>
     <div data-key="69" class="key">
       <kbd>E</kbd>
       <span class="sound">#</span>
+      <audio id="tough" src="./sounds/tough.mp3"></audio>
+      <button onclick="document.getElementById('tough').play()"></button>
     </div>
     <div data-key="83" class="key">
       <kbd>S</kbd>
       <span class="sound">BIRDGANG</span>
+      <audio id="cory" src="./sounds/cory.mp3"></audio>
+      <button onclick="document.getElementById('cory').play()"></button>
     </div>
   </div>
 
@@ -60,6 +72,9 @@
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
+
+  
+  
 </script>
 
 
